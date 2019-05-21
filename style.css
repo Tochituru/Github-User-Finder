@@ -1,0 +1,87 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .form-control {
+    background: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 1px !important;
+    color: white;
+  }
+  
+  .form-control:focus {
+    border-color: white;
+  }
+  
+  .btn {
+    border-radius: 1px !important;
+  }
+  
+  .background-image {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('https://cdn-images-1.medium.com/max/1024/1*wzEf4qVNT7mUeMIeQWTJbg.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .background-image__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #272424;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  
+  .card {
+    border-radius: 1px !important;
+    height: 100%;
+  }
+  
+  .card-title {
+    color: black;
+  }
+  
+  .card-text {
+    color: grey;
+  }
+  
+  .card-inner {
+    padding: 1.25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .profile-details {
+    height: 100%;
+  }
+  
+  .list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 1px !important;
+  }
+  
+  @media (max-width: 575px) {
+    #profile {
+      text-align: center;
+    }
+    #search-form, #alert-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .profile-details {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .search-btn {
+      margin-top: 1rem;
+    }
+  }

@@ -1,0 +1,48 @@
+La API de Github es gratuita y pública, pero tiene límites de búsqueda. Se bloquea un tiempo y y vuelve a estar disponible.
+
+Acá en vez de una key, hay dos valores, clientID y ClientSecret.
+
+Para entender qué datos me devuelve el json de una api, lo copio en el navegador con las variables reemplazadas y lo pego en el navegador.
+
+
+cuando tenemos dos apis, podemos hacer dos fetch separados como una opción, dos cosas separadas, cada una con una función separada.
+Las dos búsqeudas se ejecutan en simultáneo, como ambos devuelven una promesa; cuando contesta una, ejecuto su función y cuando contesta otra, ejecuto la otra función.
+La otra opción es que esté dentro del primer fetch. Va una acción en cadena.
+
+
+For Each
+numeros.forEach(function guardarDoble (singular) {
+dobles.push(numero * 2);
+});
+Se escribe como método y quiero que pase sobre cada elemento.
+Tiene un parámetro que internamente reconoce que es cada elemento del array
+Es una forma más declarativa de hacer la función
+
+
+Método map
+Método de array
+En el for tengo que explicar paso a paso lo que tiene que hacer
+Quiero decir qué quiero que haga, en vez de cómo quiero que lo haga
+El MAP funciona igual que el for Each y for e itera cada elemento del array.
+Tengo que indicar cómo quiero que me transforme ese elemento.
+
+const dobles = numeros.map (function (numero) {
+    return numero * 2;
+})
+
+Sí o sí tiene que teer un return. Si no, no funciona. 
+Si no tenemos un return, no tendríamos que usar esta función.
+Para el push no nació el map, sino que me tiene que devolver todos los elementos ya procesados.
+PAra que funcione bien en un nuevo array, puedo hacerlo directamente en una const
+
+El parámetro siempre es el singular del array u objeto que uso.
+Puedo por ejemplo elegir un objeto personas con una propiedad nombre y volverlo un array solo con el nombre.
+
+const nombres = personas (persona => return persona.nombre);
+
+En front end, es muy común que se los convierta a objetos de html;
+
+const nombres = personas (persona => return `<li>${persona.nombre}</li>`);
+
+
+
